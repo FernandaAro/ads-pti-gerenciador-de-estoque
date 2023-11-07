@@ -44,6 +44,6 @@ class GerenciadorEstoque
     }
     public void SaidaEstoque(int posicao, int qtd)
     {
-
+        jogos[posicao].Estoque -= qtd;
     }
 }
