@@ -30,11 +30,27 @@ namespace LojaDeJogos
             j3.Desenvolvedor = "Moon Studios";
             j3.Estoque = 0;
 
+            Jogo j4 = new Jogo();
+            j4.Nome = "Horizon Zero Dawn";
+            j4.Preco = 199.90;
+            j4.Jogadores = 1;
+            j4.Plataforma = "Windows, Playstation";
+            j4.Desenvolvedor = "Guerrilla Games";
+            j4.Estoque = 0;
+
             GerenciadorEstoque gerenciador = new GerenciadorEstoque();
             gerenciador.Adicionar(j1);
             gerenciador.Adicionar(j2);
             gerenciador.Adicionar(j3);
+            gerenciador.Adicionar(j4);
+            gerenciador.Listar();
 
+            Console.WriteLine("\nRemovendo posição 1");
+            gerenciador.Remover(1);
+            gerenciador.Listar();
+
+            Console.WriteLine("\nAdicionando 4 itens no Horizon Zero Dawn");
+            gerenciador.EntradaEstoque(2, 4);
             gerenciador.Listar();
         }
     }
