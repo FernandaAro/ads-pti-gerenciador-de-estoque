@@ -4,7 +4,7 @@ class Tela
 {
     public int MostrarMenu()
     {
-        Console.WriteLine("\n\nO que deseja fazer?\n");
+        Console.WriteLine("\nO que deseja fazer?\n");
         Console.WriteLine("1. Novo");
         Console.WriteLine("2. Listar Produtos");
         Console.WriteLine("3. Remover Produtos");
@@ -12,7 +12,7 @@ class Tela
         Console.WriteLine("5. Saída Estoque");
         Console.WriteLine("0. Sair\n");
 
-        int opcao = PedirNumeroInt("--");
+        int opcao = PedirNumeroInt("---");
         return opcao;
     }
     public int PedirNumeroInt(string msg)
