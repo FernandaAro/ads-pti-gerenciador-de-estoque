@@ -5,11 +5,17 @@
 Você foi contratado por uma empresa para desenvolver um software que gerenciará o estoque de seus produtos. No primeiro protótipo que você desenvolverá, o sistema ainda não irá se conectar ao banco de dados. As informações ficarão em memória, assim, serão perdidas ao reiniciar o programa.
 
 Assim que o software abrir, ele deve apresentar o seguinte menu:
+
 [1] Novo
+
 [2] Listar Produtos
+
 [3] Remover Produtos
+
 [4] Entrada Estoque
+
 [5] Saída Estoque
+
 [0] Sair
 
 O Menu deve ser recursivo, após a realização da ação escolhida, ele deve voltar a ser apresentado até que seja escolhida a ação Sair.
@@ -20,7 +26,7 @@ O Menu deve ser recursivo, após a realização da ação escolhida, ele deve vo
 
 ## :rocket: Rodando o projeto
 
-Para rodar o repositório é necessário clonar o mesmo, e realizar o seguinte comando para iniciar o projeto:
+Para rodar o repositório é necessário clonar o mesmo, e realizar o seguinte comando no terminal para iniciar o projeto:
 
 ```
 dotnet run

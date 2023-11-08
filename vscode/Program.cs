@@ -43,10 +43,39 @@ namespace LojaDeJogos
                         //jogo.Desenvolvedor = Console.ReadLine();
 
                         gerenciador.Adicionar(jogo);
+                    }
 
+                    else if (opcao == 2)
+                    {
                         gerenciador.Listar();
                     }
 
+                    else if (opcao == 3)
+                    {
+                        gerenciador.Listar();
+                        tela.Escrever("\nInforme qual item deseja remover: ");
+                        gerenciador.Remover(Convert.ToInt32(Console.ReadLine()) - 1);
+                    }
+
+                    else if (opcao == 4)
+                    {
+                        gerenciador.Listar();
+                        tela.Escrever("\nInforme em qual item deseja adicionar o estoque: ");
+                        int posicao = (Convert.ToInt32(Console.ReadLine()) - 1);
+                        tela.Escrever("\nInforme quanto deseja adicionar: ");
+                        int qtd = (Convert.ToInt32(Console.ReadLine()));
+                        gerenciador.EntradaEstoque(posicao, qtd);
+                    }
+
+                    else if (opcao == 5)
+                    {
+                        gerenciador.Listar();
+                        tela.Escrever("\nInforme em qual item deseja remover o estoque: ");
+                        int posicao = (Convert.ToInt32(Console.ReadLine()) - 1);
+                        tela.Escrever("\nInforme quanto deseja remover: ");
+                        int qtd = (Convert.ToInt32(Console.ReadLine()));
+                        gerenciador.EntradaEstoque(posicao, qtd);
+                    }
                 }
             }
         }
