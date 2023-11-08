@@ -26,7 +26,7 @@ O Menu deve ser recursivo, após a realização da ação escolhida, ele deve vo
 
 ## :rocket: Rodando o projeto
 
-Para rodar o repositório é necessário clonar o mesmo, e realizar o seguinte comando no terminal para iniciar o projeto:
+Para rodar o repositório é necessário clonar o mesmo, e realizar o seguinte comando no terminal para iniciar o projeto dentro da pasta /vscode:
 
 ```
 dotnet run
