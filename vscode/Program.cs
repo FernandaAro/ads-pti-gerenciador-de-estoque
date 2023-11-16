@@ -9,7 +9,7 @@ namespace LojaDeJogos
             Tela tela = new Tela();
             GerenciadorEstoque gerenciador = new GerenciadorEstoque();
 
-            tela.Escrever("\n---SOFTWARE GERENCIADOR DE ESTOQUE---");
+            tela.Escrever("\n---SOFTWARE GERENCIADOR DE ESTOQUE DE FERNANDA ARO---");
 
             bool executando = true;
             while (executando == true)
@@ -90,6 +90,10 @@ namespace LojaDeJogos
                         tela.Escrever("\n---");
                         tela.Escrever("Saída realizada!");
                         tela.Escrever("---");
+                    }
+                    else if (opcao >= 6)
+                    {
+                        tela.Escrever("\nInválido! Por favor, escolha uma opção entre 0 e 5!");
                     }
                 }
             }
